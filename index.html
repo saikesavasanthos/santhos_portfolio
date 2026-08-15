@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b10">
+  <title>BALLANI SAI KESAVA SANTHOS | Cyber Security Portfolio</title>
+  <meta name="description" content="B.Tech CSE Cyber Security student at NIIT University focused on Cyber Security, secure systems, software development and problem solving.">
+  <meta name="author" content="Ballani Sai Kesava Santhos">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BALLANI SAI KESAVA SANTHOS | Cyber Security Portfolio">
+  <meta property="og:description" content="B.Tech CSE Cyber Security student at NIIT University focused on Cyber Security, secure systems, software development and problem solving.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ BACKGROUND LAYERS ============ -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas id="node-canvas" aria-hidden="true"></canvas>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>BSKS<span class="logo-bracket">&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-num">00</span>Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about"><span class="nav-num">01</span>About</a></li>
+        <li><a href="#cybersecurity" class="nav-link" data-section="cybersecurity"><span class="nav-num">02</span>Cyber Security</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-num">03</span>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-num">04</span>Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience"><span class="nav-num">05</span>Experience</a></li>
+        <li><a href="#education" class="nav-link" data-section="education"><span class="nav-num">06</span>Education</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements"><span class="nav-num">07</span>Recognition</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact"><span class="nav-num">08</span>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+ <section class="hero" id="home">
+    <div class="hero-inner">
+
+        <!-- LEFT: PROFILE PHOTO -->
+        <div class="hero-photo-wrap">
+            <div class="hero-photo">
+                <img
+                    src="assets/formalpic.jpeg"
+                    alt="BALLANI SAI KESAVA SANTHOS"
+                    loading="eager"
+                    decoding="async"
+                >
+            </div>
+        </div>
+
+        <!-- RIGHT: INTRODUCTION -->
+        <div class="hero-content">
+
+            <div class="status-line">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE — OPEN TO OPPORTUNITIES
+            </div>
+
+            <h1 class="hero-name">
+                BALLANI SAI<br>
+                KESAVA SANTHOS
+            </h1>
+
+            <p class="hero-role">
+                B.Tech CSE — Cyber Security @ NIIT University
+            </p>
+
+            <div class="hero-about">
+                <span class="hero-about-label">About Me</span>
+
+                <p>
+                    I'm a B.Tech Computer Science student specializing
+                    in Cyber Security at NIIT University. I enjoy
+                    understanding how systems work, identifying where
+                    they can be vulnerable, and exploring how they can
+                    be designed more securely.
+                </p>
+
+                <p>
+                    My interests include Cyber Security, cryptography,
+                    secure systems, network security, and post-quantum
+                    security. I also enjoy building projects, solving
+                    problems, and working with teams.
+                </p>
+            </div>
+
+            <!-- CIRCULAR ACTION BUTTONS -->
+            <div class="hero-actions">
+
+                <a
+                    href="assets/Profile.pdf"
+                    class="hero-action hero-action--cyan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span class="hero-action-num">01</span>
+                    <span class="hero-action-label">Resume</span>
+                </a>
+
+                <a
+                    href="#projects"
+                    class="hero-action hero-action--violet"
+                >
+                    <span class="hero-action-num">02</span>
+                    <span class="hero-action-label">Projects</span>
+                </a>
+
+                <a
+                    href="#experience"
+                    class="hero-action hero-action--gradient"
+                >
+                    <span class="hero-action-num">03</span>
+                    <span class="hero-action-label">Experience</span>
+                </a>
+
+                <a
+                    href="#contact"
+                    class="hero-action hero-action--neutral"
+                >
+                    <span class="hero-action-num">04</span>
+                    <span class="hero-action-label">Contact</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow">01 · About</p>
+        <h2 class="section-title">Connecting the dots.</h2>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="reveal">
+              I'm someone who enjoys connecting the dots — whether it's through data, design, or daily life.
+            </p>
+            <p class="reveal">
+              From building logic in image processing to comparing search algorithms, I love understanding
+              <em>why</em> things work, not just how — which is what draws me toward Cyber Security: understanding
+              how systems can be attacked, where they're weak, and how to design them to hold up.
+            </p>
+            <p class="reveal">
+              I balance analytical thinking with creativity, whether writing optimized code, crafting structured
+              communication, or exploring tech that meets real-world needs. It's the same instinct applied to
+              secure system design — stay curious, question assumptions, and keep learning.
+            </p>
+            <p class="reveal">
+              Also the go-to person for group planning, problem solving, and asking the questions others overlook.
+            </p>
+
+            <blockquote class="motto">
+              <span class="motto-mark">$</span> Think logically. Live thoughtfully.
+            </blockquote>
+          </div>
+
+          <div class="about-panels">
+            <div class="panel">
+              <h3 class="panel-title"><span class="panel-icon">◈</span>Cyber Security Focus</h3>
+              <p class="panel-sublabel">Areas I'm currently exploring</p>
+              <ul class="chip-list">
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Post-Quantum Cryptography</li>
+                <li>Web Application Security</li>
+                <li>Security Research</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3 class="panel-title"><span class="panel-icon">◈</span>Strengths</h3>
+              <ul class="chip-list">
+                <li>Analytical Thinking</li>
+                <li>Team Collaboration</li>
+                <li>Creative Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CYBER SECURITY ============ -->
+    <section class="section section-alt" id="cybersecurity">
+      <div class="section-inner">
+        <p class="eyebrow">02 · Cyber Security</p>
+        <h2 class="section-title">Why Cyber Security?</h2>
+
+        <div class="cybersec-grid">
+          <div class="cybersec-copy reveal">
+            <p>
+              I am interested in understanding how digital systems can be attacked, protected, and designed more
+              securely. My focus is developing strong foundations in Cyber Security while exploring emerging areas
+              such as cryptography, secure systems, and post-quantum security.
+            </p>
+          </div>
+
+          <div class="terminal-panel reveal">
+            <div class="terminal-header">
+              <span class="terminal-dot terminal-dot--red"></span>
+              <span class="terminal-dot terminal-dot--yellow"></span>
+              <span class="terminal-dot terminal-dot--green"></span>
+              <span class="terminal-header-label">currently_exploring.sh</span>
+            </div>
+            <ul class="terminal-list">
+              <li><span class="terminal-index">[01]</span><span class="terminal-blink" aria-hidden="true"></span>CYBER SECURITY</li>
+              <li><span class="terminal-index">[02]</span><span class="terminal-blink" aria-hidden="true"></span>POST-QUANTUM CRYPTOGRAPHY</li>
+              <li><span class="terminal-index">[03]</span><span class="terminal-blink" aria-hidden="true"></span>SECURE SYSTEMS</li>
+              <li><span class="terminal-index">[04]</span><span class="terminal-blink" aria-hidden="true"></span>NETWORK SECURITY</li>
+              <li><span class="terminal-index">[05]</span><span class="terminal-blink" aria-hidden="true"></span>SECURITY RESEARCH</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="status-strip reveal">
+          <div class="status-item">
+            <span class="status-label">System Status</span>
+            <span class="status-value"><span class="status-dot" aria-hidden="true"></span>Online</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Focus</span>
+            <span class="status-value">Cyber Security</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Location</span>
+            <span class="status-value">India</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Graduation</span>
+            <span class="status-value">2028</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow">03 · Skills</p>
+        <h2 class="section-title">Toolset.</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3 class="skill-cat"><span class="skill-cat-icon">🛡</span>Cyber Security Focus</h3>
+            <p class="skill-cat-sublabel">Focus Areas</p>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Network Security</li>
+              <li><span class="skill-dot"></span>Cryptography</li>
+              <li><span class="skill-dot"></span>Post-Quantum Cryptography</li>
+              <li><span class="skill-dot"></span>Web Application Security</li>
+              <li><span class="skill-dot"></span>Security Research</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-cat"><span class="skill-cat-icon">⌘</span>Core Computer Science</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Data Structures</li>
+              <li><span class="skill-dot"></span>Algorithms</li>
+              <li><span class="skill-dot"></span>Computer Science Fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-cat"><span class="skill-cat-icon">◎</span>Working Style</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Problem Solving</li>
+              <li><span class="skill-dot"></span>Teamwork</li>
+              <li><span class="skill-dot"></span>Event Management</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-cat"><span class="skill-cat-icon">🌐</span>Languages</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>English</li>
+              <li><span class="skill-dot"></span>Hindi</li>
+              <li><span class="skill-dot"></span>Telugu</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow">04 · Projects</p>
+        <h2 class="section-title">Selected work.</h2>
+        <p class="section-sub">Populated automatically from the <code>PROJECTS</code> list in script.js — add real projects there and cards appear here.</p>
+
+        <div class="project-grid" id="projectGrid">
+          <!-- Rendered dynamically by script.js from the PROJECTS array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" aria-label="Close project details">&times;</button>
+        <div class="modal-media" id="modalMedia">
+          <img id="modalImage" src="" alt="">
+        </div>
+        <p class="eyebrow" id="modalEyebrow">Project</p>
+        <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        <div class="modal-body">
+          <div class="modal-field" id="modalProblemField"><h4>Problem</h4><p id="modalProblem"></p></div>
+          <div class="modal-field" id="modalApproachField"><h4>Approach</h4><p id="modalApproach"></p></div>
+          <div class="modal-field" id="modalTechField"><h4>Technologies</h4><div class="tag-row" id="modalTech"></div></div>
+          <div class="modal-field" id="modalContributionField"><h4>My Contribution</h4><p id="modalContribution"></p></div>
+          <div class="modal-field" id="modalResultField"><h4>Result</h4><p id="modalResult"></p></div>
+        </div>
+        <div class="modal-actions" id="modalActions">
+          <a href="#" class="btn btn-sm btn-outline" id="modalGithub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#" class="btn btn-sm btn-primary" id="modalDemo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-inner">
+        <p class="eyebrow">05 · Experience</p>
+        <h2 class="section-title">Where I've worked.</h2>
+
+        <!-- siNUsoid career progression -->
+        <div class="progression reveal" role="list" aria-label="siNUsoid career progression">
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2024</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">siNUsoid<br><em>Operations Volunteer</em></span>
+          </div>
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2025</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">siNUsoid<br><em>Operations Team Lead</em></span>
+          </div>
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2026</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">siNUsoid<br><em>Operations Core</em></span>
+          </div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">April 2026 — Present</p>
+              <h3 class="timeline-role">Operations Core</h3>
+              <p class="timeline-org">siNUsoid</p>
+              <p class="timeline-desc">Contributing to planning, coordination, and execution as part of the Operations team.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">May 2025 — April 2026</p>
+              <h3 class="timeline-role">Operations Lead</h3>
+              <p class="timeline-org">siNUsoid</p>
+              <p class="timeline-desc">Led the Operations team, coordinating logistics and execution across the event.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">July 2024 — May 2025</p>
+              <h3 class="timeline-role">Operations Volunteer</h3>
+              <p class="timeline-org">siNUsoid</p>
+              <p class="timeline-desc">Contributing to planning, coordination, and execution as part of the Operations team.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">May 2026 — June 2026</p>
+              <h3 class="timeline-role">Cyber Security Intern</h3>
+              <p class="timeline-org">Future Interns</p>
+              <p class="timeline-desc">Completed a one-month Cyber Security internship, gaining structured exposure to practical security tasks and professional workflows.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">August 2024 — April 2025</p>
+              <h3 class="timeline-role">Production Volunteer</h3>
+              <p class="timeline-org">TEDxNIITUniversity</p>
+              <p class="timeline-desc">Contributing to production tasks and on-ground execution for the event.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">August 2024 — February 2025</p>
+              <h3 class="timeline-role">Capture Volunteer</h3>
+              <p class="timeline-org">Hult Prize NIIT University</p>
+              <p class="timeline-desc">Contributing to capturing and documenting the event as part of the volunteer team.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="section-inner">
+        <p class="eyebrow">06 · Education</p>
+        <h2 class="section-title">Academic foundation.</h2>
+
+        <div class="edu-card reveal">
+          <div class="edu-mark">◈</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Bachelor of Technology — Computer Science</h3>
+            <p class="edu-school">NIIT University</p>
+            <p class="edu-date">June 2024 — June 2028</p>
+            <p class="edu-focus">Academic focus: <span class="tag-kw">Cyber Security</span></p>
+            <p class="edu-status"><span class="edu-status-label">Current Status</span>3rd Year Undergraduate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS & RECOGNITION ============ -->
+    <section class="section" id="achievements">
+      <div class="section-inner">
+        <p class="eyebrow">07 · Achievements</p>
+        <h2 class="section-title">Achievements &amp; Recognition.</h2>
+        <p class="section-sub">Verified certifications, leadership recognition, and letters of recommendation — swap in the real certificate/LOR files in <code>assets/certificates/</code> and <code>assets/recommendations/</code>.</p>
+
+        <!-- Leadership progression mini-timeline -->
+        <div class="progression" role="list" aria-label="Leadership progression timeline">
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2024</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">siNUsoid v8<br><em>Operations Volunteer</em></span>
+          </div>
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2025</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">siNUsoid v9<br><em>Operations Team Lead</em></span>
+          </div>
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2025</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">TEDxNIITUniversity<br><em>Volunteer / Contributor</em></span>
+          </div>
+          <div class="progression-item" role="listitem">
+            <span class="progression-year">2026</span>
+            <span class="progression-arrow" aria-hidden="true">↓</span>
+            <span class="progression-role">Cyber Security Intern<br><em>Future Interns</em></span>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-row" role="group" aria-label="Filter achievements by category">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="certifications" aria-pressed="false">Certifications</button>
+          <button class="filter-btn" data-filter="leadership" aria-pressed="false">Leadership</button>
+          <button class="filter-btn" data-filter="recognition" aria-pressed="false">Recognition</button>
+          <button class="filter-btn" data-filter="recommendations" aria-pressed="false">Recommendations</button>
+        </div>
+
+        <!-- Certifications & Internships + Leadership & Recognition -->
+        <div class="recognition-grid" id="recognitionGrid">
+
+          <article class="cert-card reveal" data-category="certifications">
+            <div class="cert-thumb">
+              <img src="assets/certificates/generative-ai.pdf" alt="Generative AI Mastermind certificate" loading="lazy" width="400" height="300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="cert-thumb-fallback">CERT</div>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-badge">Certificate of Completion</span>
+              <h3 class="cert-title">Generative AI Mastermind</h3>
+              <p class="cert-org">Outskiill</p>
+              <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/certificates/generative-ai-mastermind.jpg" data-title="Generative AI Mastermind — Outskiill">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card cert-card--featured reveal" data-category="certifications">
+            <span class="featured-tag">Featured</span>
+            <div class="cert-thumb">
+              <img src="assets/certificates/cyber-security-internship.pdf" alt="Future Interns Cyber Security internship certificate" loading="lazy" width="400" height="300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="cert-thumb-fallback">CERT</div>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-badge">Certificate of Completion</span>
+              <h3 class="cert-title">Cyber Security Internship</h3>
+              <p class="cert-org">Future Interns</p>
+              <p class="cert-meta">May 2026 — June 2026</p>
+              <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/certificates/future-interns-cyber-security.jpg" data-title="Cyber Security Internship — Future Interns">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="recognition">
+            <div class="cert-thumb">
+              <img src="assets/certificates/sinusoid-v8.png" alt="siNUsoid v8 certificate of appreciation" loading="lazy" width="400" height="300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="cert-thumb-fallback">CERT</div>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-badge">Certificate of Appreciation</span>
+              <h3 class="cert-title">siNUsoid v8</h3>
+              <p class="cert-org">Operations Team Volunteer · NIIT University</p>
+              <p class="cert-meta">November 2024</p>
+              <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/certificates/sinusoid-v8-appreciation.jpg" data-title="siNUsoid v8 — Operations Team Volunteer">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card cert-card--featured reveal" data-category="leadership">
+            <span class="featured-tag">Featured</span>
+            <div class="cert-thumb">
+              <img src="assets/certificates/sinusoid-v9-appreciation.jpg" alt="siNUsoid v9 certificate of appreciation" loading="lazy" width="400" height="300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="cert-thumb-fallback">CERT</div>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-badge">Certificate of Appreciation</span>
+              <h3 class="cert-title">siNUsoid v9</h3>
+              <p class="cert-org">Operations Team Lead · NIIT University</p>
+              <p class="cert-meta">November 2025</p>
+              <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/certificates/sinusoid-v9-appreciation.jpg" data-title="siNUsoid v9 — Operations Team Lead">View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="recognition">
+            <div class="cert-thumb">
+              <img src="assets/certificates/tedx-niit.png" alt="TEDxNIITUniversity 2025 certificate of appreciation" loading="lazy" width="400" height="300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="cert-thumb-fallback">CERT</div>
+            </div>
+            <div class="cert-card-body">
+              <span class="cert-badge">Certificate of Appreciation</span>
+              <h3 class="cert-title">TEDxNIITUniversity 2025</h3>
+              <p class="cert-org">NIIT University</p>
+              <p class="cert-meta">August 2025</p>
+              <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/certificates/tedx-niit-2025.jpg" data-title="TEDxNIITUniversity 2025">View Certificate</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Letters of Recommendation -->
+        <h3 class="subsection-title">Letters of Recommendation</h3>
+        <div class="lor-grid" id="lorGrid">
+
+          <article class="lor-card cert-card--featured reveal" data-category="recommendations">
+            <span class="featured-tag">Featured</span>
+            <p class="cert-badge">siNUsoid v8 · NIIT University</p>
+            <h3 class="cert-title">Operations Team Volunteer</h3>
+            <p class="lor-recommender">Toril Jain, Executive Head — also signed by Maj Gen. Ashok K Singh (Retd.), Dean of Student Affairs, NIIT University</p>
+            <p class="lor-summary">Recommended for strong responsibility, adaptability, initiative, teamwork, communication and problem-solving during siNUsoid v8.</p>
+            <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="image" data-src="assets/recommendations/sinusoid-v8-lor.jpg" data-title="Letter of Recommendation — siNUsoid v8">View Letter</button>
+          </article>
+
+          <article class="lor-card lor-card--emphasis reveal" data-category="recommendations">
+            <span class="featured-tag featured-tag--strong">Leadership</span>
+            <p class="cert-badge">siNUsoid v9 · NIIT University</p>
+            <h3 class="cert-title">Operations Team Lead</h3>
+            <p class="lor-recommender">Vasvi Nehra, Executive Head, siNUsoid v9 — also signed by Maj Gen. Ashok K Singh (Retd.), Dean of Student Affairs, NIIT University</p>
+            <p class="lor-summary">Recommended for leadership, responsibility, communication, problem-solving, reliability and ownership as an Operations Team Lead.</p>
+            <button class="btn btn-sm btn-primary js-lightbox-trigger" data-type="image" data-src="assets/recommendations/sinusoid-v9-lor.jpg" data-title="Letter of Recommendation — siNUsoid v9">View Letter</button>
+          </article>
+
+          <article class="lor-card cert-card--featured reveal" data-category="recommendations">
+            <span class="featured-tag">Featured</span>
+            <p class="cert-badge">Future Interns</p>
+            <h3 class="cert-title">Cyber Security Intern</h3>
+            <p class="lor-recommender">May 2026 — June 2026</p>
+            <p class="lor-summary">Recognized for professionalism, structured problem-solving, willingness to learn and attention to detail during the Cyber Security internship.</p>
+            <button class="btn btn-sm btn-outline js-lightbox-trigger" data-type="pdf" data-src="assets/recommendations/future-interns-lor.pdf" data-title="Letter of Recommendation — Future Interns">View Letter (PDF)</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate / LOR Lightbox (images only — PDFs open in a new tab) -->
+    <div class="lightbox-overlay" id="lightboxOverlay" aria-hidden="true">
+      <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+        <button class="modal-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+        <p class="lightbox-title" id="lightboxTitle">Certificate</p>
+        <div class="lightbox-frame">
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxError" class="lightbox-error">
+        Certificate could not be loaded.
+        Please check the file path in the assets folder.
+    </p>
+</div>
+      </div>
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow">08 · Contact</p>
+        <h2 class="section-title">Let's build something meaningful.</h2>
+        <p class="section-sub">Open to internships, collaborations, and conversations about security and software.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="contact-row" href="mailto:saikesavasantosh@gmail.com">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">saikesavasantosh@gmail.com</span>
+            </a>
+            <a class="contact-row" href="https://www.linkedin.com/in/saikesavasanthos" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">/in/saikesavasanthos</span>
+            </a>
+            <a class="contact-row" href="https://github.com/saikesavasanthos" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">/saikesavasanthos</span>
+            </a>
+            <a class="btn btn-outline contact-github-cta" href="https://github.com/saikesavasanthos" target="_blank" rel="noopener noreferrer">Explore My GitHub →</a>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="cfSubmit">Send Message</button>
+            <p class="form-note" id="cfNote">This opens your email client with your message pre-filled — it isn't a backend contact system. To send messages without one, connect Formspree or EmailJS in script.js.</p>
+            <p class="form-status" id="cfStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-name">BALLANI SAI KESAVA SANTHOS</p>
+        <p class="footer-role">B.Tech CSE — Cyber Security</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/saikesavasanthos" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/saikesavasanthos" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:saikesavasantosh@gmail.com">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Ballani Sai Kesava Santhos</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
